@@ -1,0 +1,54 @@
+@media (max-width: 1200px) {
+  .navigation {
+    li {
+      display: none;
+    }
+    .option {
+      display: block;
+    }
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+@media (max-width: 800px) {
+  .landing-page {
+    .intro {
+      .container {
+        justify-content: center;
+        text-align: center;
+        h1 {
+          font-size: 3rem;
+        }
+        p {
+          span {
+            display: block;
+            padding: 0.3rem 0;
+          }
+          .line {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .secondary-navigation {
+    .container {
+      height: auto;
+      ul {
+        display: block;
+        margin-top: 1rem;
+        li {
+          a {
+            i {
+              font-size: 4rem;
+            }
+          }
+        }
+      }
+    }
+    .close {
+      z-index: 3;
+    }
+  }
+}
