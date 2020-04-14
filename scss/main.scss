@@ -72,8 +72,77 @@ a {
     }
   }
 }
+.projects {
+  .view {
+    flex: 1;
+  }
+  .side-navigation {
+    flex-basis: 25%;
+    ul {
+      position: fixed;
+      li {
+        a {
+          display: inline-block;
+          font-size: 1.3rem;
+          color: #fff;
+          padding: 0.4rem 0;
+        }
+        .current {
+          color: $green;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
 
+  .batch {
+    min-height: 60vh;
+    h1 {
+      padding: 1rem 0;
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      color: $grey;
+    }
+    .tiles {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 15px;
+      margin: 1.5rem 0;
+      .project {
+        background-color: #000;
+        img {
+          width: 100%;
+        }
+        .project-body {
+          text-align: center;
+          padding: 1rem;
+          h2 {
+            padding: 0.5rem 0;
+          }
+          p {
+            font-size: 1rem;
+            line-height: 1.5;
+          }
+          .actions {
+            padding: 1rem 0;
+
+            a {
+              display: inline-block;
+              background-color: $green;
+              color: $dark;
+              padding: 0.5rem 1rem;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .header {
+  width: 100%;
   padding: 1rem;
   .title {
     flex: 1;
