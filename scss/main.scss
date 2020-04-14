@@ -38,18 +38,6 @@ a {
     position: relative;
     z-index: 1;
   }
-  .header {
-    padding: 1rem;
-    .title {
-      flex: 1;
-    }
-    .title {
-      h1 {
-        font-weight: 400;
-        font-size: 1.7rem;
-      }
-    }
-  }
   .intro {
     height: 80%;
     .container {
@@ -85,6 +73,18 @@ a {
   }
 }
 
+.header {
+  padding: 1rem;
+  .title {
+    flex: 1;
+  }
+  .title {
+    h1 {
+      font-weight: 400;
+      font-size: 1.7rem;
+    }
+  }
+}
 @import "utility";
 
 @import "keyframes";
