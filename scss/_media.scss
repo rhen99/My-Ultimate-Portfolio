@@ -10,6 +10,13 @@
   .mobile-menu {
     display: block;
   }
+  .projects {
+    .batch {
+      .tiles {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
 }
 @media (max-width: 800px) {
   .landing-page {
@@ -49,6 +56,23 @@
     }
     .close {
       z-index: 3;
+    }
+  }
+  .projects {
+    .side-navigation {
+      display: none;
+    }
+    .batch {
+      text-align: center;
+      h1 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .tiles {
+        grid-template-columns: 1fr;
+      }
     }
   }
 }
