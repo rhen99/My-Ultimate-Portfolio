@@ -17,7 +17,22 @@
       }
     }
   }
+  .my-story {
+    .story {
+      .title {
+        h1 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+      .body {
+      }
+    }
+  }
 }
+
 @media (max-width: 800px) {
   .landing-page {
     .intro {
@@ -72,6 +87,28 @@
       }
       .tiles {
         grid-template-columns: 1fr;
+      }
+    }
+  }
+  .mobile-padding {
+    height: 40vh;
+  }
+}
+@media (max-width: 700px) {
+  .my-story {
+    .story {
+      .title {
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+      .body {
+        p {
+          font-size: 1rem;
+        }
       }
     }
   }
