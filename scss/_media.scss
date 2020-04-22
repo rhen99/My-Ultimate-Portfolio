@@ -94,6 +94,7 @@
     height: 40vh;
   }
 }
+
 @media (max-width: 700px) {
   .my-story {
     .overlay {
@@ -109,6 +110,50 @@
         .body {
           p {
             font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .contact-me {
+    padding: 3rem 0;
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    .container {
+      display: block;
+      form,
+      .other-ways {
+        padding: 0;
+      }
+      form {
+        .input {
+          label {
+          }
+          input {
+          }
+        }
+        .input-textarea {
+          label {
+          }
+          textarea {
+          }
+        }
+        .send {
+        }
+      }
+      .other-ways {
+        .other-contacts {
+          p {
+            input {
+            }
+            span {
+            }
+          }
+        }
+        .social-media {
+          p {
           }
         }
       }
