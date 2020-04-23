@@ -19,18 +19,21 @@
             <h1>Contact Arhen</h1>
           </div>
           <ul class="navigation">
-            <li>
+            <li class="list-item">
               <a href="portfolio.html"
                 ><i class="fas fa-door-open"></i> See My Work</a
               >
             </li>
-            <li>
-              <a href="personal.html"
-                ><i class="fas fa-user"></i> Know Me Personally</a
-              >
+            <li class="list-item">
+              <a href="personal.html"><i class="fas fa-user"></i> About Me</a>
+            </li>
+            <li class="option go-home">
+              <a href="index.html" class="mobile-btns">
+                <i class="fas fa-home"></i>
+              </a>
             </li>
             <li class="option">
-              <div class="elipsis opt-btn">
+              <div class="mobile-btns opt-btn">
                 <i class="fas fa-ellipsis-h"></i>
               </div>
             </li>
@@ -42,33 +45,33 @@
           <div class="opt-btn close">
             <i class="fas fa-times"></i>
           </div>
-          <ul>
-            <li>
+          <ul class="nav-list">
+            <li class="nav-item">
               <a href="index.html"
                 ><i class="fas fa-home fa-5x"></i> <span>Home</span></a
               >
             </li>
-            <li>
+            <li class="nav-item">
               <a href="portfolio.html"
-                ><i class="fas fa-door-open fa-5x"></i> <span>My Lab</span></a
+                ><i class="fas fa-door-open fa-5x"></i> <span>My Work</span></a
               >
             </li>
-            <li>
+            <li class="nav-item">
               <a href="personal.html"
-                ><i class="fas fa-user fa-5x"></i> <span>Personal</span></a
+                ><i class="fas fa-user fa-5x"></i> <span>About Me</span></a
               >
             </li>
-            <li>
+            <li class="nav-item">
               <a href="contact.html"
-                ><i class="fas fa-comment fa-5x"></i> <span>Message</span></a
+                ><i class="fas fa-comment fa-5x"></i> <span>Contact Me</span></a
               >
             </li>
-            <li>
+            <li class="nav-item">
               <a href="https://github.com/rhen99" target="_blank"
                 ><i class="fab fa-github-alt fa-5x"></i> <span>GitHub</span></a
               >
             </li>
-            <li>
+            <li class="nav-item">
               <a href="#"
                 ><i class="fab fa-codepen fa-5x"></i> <span>Codepen</span></a
               >
@@ -104,13 +107,24 @@
               <h1>Other Ways To Contact</h1>
               <p class="contact">
                 Skype Handle:
-                <input type="text" value="@somthing" readonly /><span
+                <input
+                  class="copy"
+                  type="text"
+                  id="skype"
+                  value="@somthing"
+                  readonly
+                /><span class="copy-btn copy-skype"
                   ><i class="far fa-copy"></i
                 ></span>
+                <span class="copied-text">Copied to Clipboard</span>
               </p>
               <p class="contact">
-                Phone No: <input type="text" readonly value="0926 433 9358" />
-                <span><i class="far fa-copy"></i></span>
+                Phone No:
+                <input id="number" type="text" readonly value="0926 433 9358" />
+                <span class="copy-btn copy-number"
+                  ><i class="far fa-copy"></i
+                ></span>
+                <span class="copied-text">Copied to Clipboard</span>
               </p>
             </div>
             <div class="social-media">
@@ -127,23 +141,6 @@
               </p>
             </div>
           </div>
-        </div>
-        <div class="mobile-padding"></div>
-      </div>
-      <div class="mobile-menu">
-        <div class="container">
-          <ul class="d-flex">
-            <li>
-              <a href="portfolio.html"
-                ><i class="fas fa-door-open"></i><span>My Lab</span></a
-              >
-            </li>
-            <li>
-              <a href="personal.html"
-                ><i class="fas fa-user"></i><span>About Me</span></a
-              >
-            </li>
-          </ul>
         </div>
       </div>
     </main>

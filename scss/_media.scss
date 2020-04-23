@@ -1,71 +1,64 @@
 @media (max-width: 1200px) {
-  .navigation {
-    li {
-      display: none;
-    }
-    .option {
-      display: block;
-    }
-  }
-  .mobile-menu {
-    display: block;
-  }
   .projects {
-    .batch {
-      .tiles {
-        grid-template-columns: 1fr 1fr;
-      }
+    .tiles {
+      grid-template-columns: 1fr 1fr;
     }
   }
   .my-story {
-    .story {
-      .title {
-        h1 {
-          font-size: 3rem;
-        }
-        p {
-          font-size: 1.5rem;
-        }
+    .title {
+      h1 {
+        font-size: 3rem;
       }
-      .body {
+      p {
+        font-size: 1.5rem;
       }
     }
   }
 }
 
 @media (max-width: 800px) {
+  .navigation {
+    .list-item {
+      display: none;
+    }
+    .go-home {
+      display: inline-block;
+    }
+  }
   .landing-page {
     .intro {
       .container {
         justify-content: center;
         text-align: center;
-        h1 {
-          font-size: 3rem;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        span {
+          display: block;
+          padding: 0.3rem 0;
         }
-        p {
-          span {
-            display: block;
-            padding: 0.3rem 0;
-          }
-          .line {
-            display: none;
-          }
+        .line {
+          display: none;
         }
+      }
+      .call-to-action {
+        display: block;
+        margin: 1rem 0;
       }
     }
   }
   .secondary-navigation {
     .container {
       height: auto;
-      ul {
+      .nav-list {
         display: block;
         margin-top: 1rem;
-        li {
-          a {
-            i {
-              font-size: 4rem;
-            }
-          }
+      }
+      .nav-item {
+        i {
+          font-size: 4rem;
         }
       }
     }
@@ -85,33 +78,31 @@
       p {
         font-size: 1rem;
       }
-      .tiles {
-        grid-template-columns: 1fr;
-      }
     }
-  }
-  .mobile-padding {
-    height: 40vh;
+    .tiles {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
 @media (max-width: 700px) {
+  .header {
+    h1 {
+      font-size: 1.3rem;
+    }
+  }
   .my-story {
-    .overlay {
-      .story {
-        .title {
-          h1 {
-            font-size: 2rem;
-          }
-          p {
-            font-size: 1.2rem;
-          }
-        }
-        .body {
-          p {
-            font-size: 1rem;
-          }
-        }
+    .title {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    .body {
+      p {
+        font-size: 1.2rem;
       }
     }
   }
@@ -123,40 +114,75 @@
 
     .container {
       display: block;
-      form,
-      .other-ways {
-        padding: 0;
-      }
-      form {
-        .input {
-          label {
-          }
-          input {
-          }
-        }
-        .input-textarea {
-          label {
-          }
-          textarea {
-          }
-        }
-        .send {
-        }
-      }
-      .other-ways {
-        .other-contacts {
-          p {
-            input {
-            }
-            span {
-            }
-          }
-        }
-        .social-media {
-          p {
+    }
+    form,
+    .other-ways {
+      padding: 0;
+    }
+  }
+  .contact-me {
+    .other-contacts {
+      p {
+        .copy-btn {
+          display: inline-block;
+          padding: 1rem;
+          position: absolute;
+          right: 0;
+          cursor: pointer;
+          &:hover {
+            color: $green;
           }
         }
       }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .my-story {
+    .title {
+      h1 {
+        font-size: 1.7rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .body {
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .secondary-navigation {
+    transform: translate3d(0, -120%, 0);
+    .container {
+      height: auto;
+      .nav-list {
+        display: block;
+        margin-top: 1rem;
+      }
+      .nav-item {
+        i {
+          font-size: 4rem;
+        }
+      }
+    }
+    .close {
+      z-index: 3;
+    }
+    overflow: auto;
+  }
+  .show {
+    transition: transform 300ms ease-in;
+    transform: translate3d(0, 0, 0);
+    .nav-item {
+      transition: transform 350ms ease-in;
+      @for $x from 1 to 6 {
+        &:nth-child(#{$x}) {
+          transition-delay: $x * 350ms;
+        }
+      }
+      transform: translate3d(0, 0, 0);
     }
   }
 }
