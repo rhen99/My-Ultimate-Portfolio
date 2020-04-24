@@ -10,16 +10,11 @@ const phoneNumber = document.querySelector("#number");
 const skypeHandle = document.querySelector("#skype");
 const copyText = document.querySelectorAll(".copied-text");
 
-//Secondary Menu Toggle EventListeners / Functions
-optBtn[0].addEventListener("click", () => {
-  menu.classList.add("show");
-  optBtn[0].classList.add("opened");
+optBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
 });
-optBtn[1].addEventListener("click", () => {
-  menu.classList.remove("show");
-  optBtn[0].classList.remove("opened");
-});
-
 //Use SmoothScroll for portfolio page.
 const scroll = new SmoothScroll('.side-navigation a[href*="#"]', {
   speed: 500,

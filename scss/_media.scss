@@ -172,17 +172,4 @@
     }
     overflow: auto;
   }
-  .show {
-    transition: transform 300ms ease-in;
-    transform: translate3d(0, 0, 0);
-    .nav-item {
-      transition: transform 350ms ease-in;
-      @for $x from 1 to 6 {
-        &:nth-child(#{$x}) {
-          transition-delay: $x * 350ms;
-        }
-      }
-      transform: translate3d(0, 0, 0);
-    }
-  }
 }
